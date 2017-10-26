@@ -1,0 +1,129 @@
+html, body {
+    color: #666;
+}
+
+.header-box {
+    width: 100%;
+    height: 64px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+}
+
+.herder {
+    width: 1160px;
+    height: 64px;
+    margin: 0 auto;
+}
+.herder .logo{
+    display: inline-block;
+    height: 64px;
+    line-height: 64px;
+}
+.herder img{
+    vertical-align: middle;
+}
+.herder .city {
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    color: #666;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 12px;
+    margin-left: 20px;
+}
+.header-nav{
+    display: inline-block;
+    margin-left: 60px;
+}
+.header-nav li{
+    float: left;
+    /*height:64px;*/
+    /*line-height: 64px;*/
+    margin-right: 20px;
+    font-size: 16px;
+}
+.header-nav li a{
+    color: #666666;
+}
+.search{
+    display: inline-block;
+    width:181px;
+    height: 24px;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    padding: 0 13px;
+    margin-left: 120px;
+    position: relative;
+}
+.search input{
+    color: #666;
+    width: 150px;
+    font-size: 14px;
+    border: none;
+    height: 100%;
+    outline: none;
+}
+.search img{
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+.loginInfo{
+    display: inline-block;
+    width: 125px;
+    height:20px;
+    margin-left: 40px;
+}
+.loginInfo button{
+    background: #fff;
+    margin-right: 5px;
+    border: 1px solid #0ac373;
+    color: #0ac373;
+    border-radius: 20px;
+    text-align: center;
+    padding: 0 12px;
+    font-size: 12px;
+    cursor: pointer;
+    line-height: 20px;
+    outline: none;
+}
+.loginInfo .button-Bg{
+    background-color: #0ac373;
+    color: #fff;
+}
+/*搜索栏弹出层*/
+.search-out{
+    width:100%;
+    border:1px solid #e6e6e6;
+    position: absolute;
+    top:24px;
+    left: -1px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: #fff;
+    padding: 5px 0;
+    display: none;
+}
+.search-out li{
+    height: 30px;
+    line-height: 25px;
+    font-size: 12px;
+    list-style: disc;
+    color: #666;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
