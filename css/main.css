@@ -1,11 +1,15 @@
 html, body {
     color: #666;
+    background-color: #F6F6F6;
 }
 
 .header-box {
     width: 100%;
     height: 64px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+    position: fixed;
+    background-color: #fff;
+    top: 0;
 }
 
 .herder {
@@ -57,6 +61,10 @@ html, body {
     padding: 0 13px;
     margin-left: 120px;
     position: relative;
+}
+.searchClick{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 .search input{
     color: #666;
@@ -117,6 +125,95 @@ html, body {
     margin-left: 30px;
     cursor: pointer;
 }
+/*主体*/
+.main{
+    width:1160px;
+    padding-top: 1px;
+    margin:64px auto;
+}
+.search-tool{
+    width:1160px;
+    box-sizing: border-box;
+    padding: 12px 34px;
+    border-radius: 6px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+.conditions{
+    line-height: 36px;
+    height: 36px;
+    font-size: 16px;
+    color: #666;
+}
+.conditions span{
+    font-size: 18px;
+    color: #ccc;
+}
+.type1{
+    border-top: 1px solid #f4f4f4;
+    position: relative;
+}
+.type1 span{
+    font-size: 12px;
+    margin-right: 50px;
+    color: #999;
+    line-height: 36px;
+    display: inline-block;
+    vertical-align: top;
+}
+.type1 .hidden{
+    height:38px;
+    overflow: hidden;
+}
+.type1 p{
+    max-width: 920px;
+    display: inline-block;
+    font-size: 12px;
+    color: #666;
+}
+.type1 p a{
+    display: inline-block;
+    width: 70px;
+    height:36px;
+    line-height: 36px;
+    margin-right: 20px;
+}
+.type1 p .type10{
+    width: 40px;
+    color: #0ac373;
+}
+.showMore{
+    display: inline-block;
+    background-color: #fff;
+    border:none;
+    color: #666;
+    width: 55px;
+    height:36px;
+    vertical-align: top;
+    cursor: pointer;
+    text-align: left;
+    line-height: 36px;
+    outline: none;
+    font-size: 12px;
+    position: absolute;
+    top:0;
+    right: 0;
+
+}
+.showMore img{
+    vertical-align: top;
+    margin-left: 35px;
+    margin-top: -23px;
+}
+.showMoreChang{
+    transform: rotate(-180deg);
+}
+/*展开按钮消失*/
+.buttonHidden{
+    display: none;
+}
+
+
 
 
 
