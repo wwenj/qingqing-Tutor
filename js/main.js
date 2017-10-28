@@ -19,10 +19,38 @@ $(function(){
             $(this).parent().find('p').removeClass('hidden');
         }
     });
+    /*li超过一行出现展开按钮*/
     for(var i=0;i<$('.type1').length;i++){
         if($('.type1').eq(i).find('a').length<11){
             $('.type1').eq(i).find('button').addClass('buttonHidden')
-            // console.log($('.type1').eq(i).find('button').html(""))
         }
     }
+    /*老师列表hover*/
+    $('.teacher-list li').hover(function(){
+        $(this).addClass('hoverLi');
+        $(this).find('.btnLi').addClass('HoverBtn')
+    }, function(){
+        $(this).removeClass('hoverLi');
+        $(this).find('.btnLi').removeClass('HoverBtn')
+    });
+    /*教学顾问点击*/
+    $('.input').on('click',function () {
+        if($(this).find('img').hasClass('showMoreChang')){
+            $(this).find('img').removeClass('showMoreChang');
+            $(this).find('.inputShow').addClass('hidden')
+        }else{
+            $(this).find('img').addClass('showMoreChang');
+            $(this).find('.inputShow').removeClass('hidden')
+        }
+    });
+    $('.input').on('mouseout',function(){
+        $(this).find('img').removeClass('showMoreChang');
+        $(this).find('.inputShow').addClass('hidden')
+    })
+    /*二维码*/
+    $('.codeimg').hover(function(){
+        $('.erweima').css('display','block')
+    },function(){
+        $('.erweima').css('display','none')
+    })
 });
