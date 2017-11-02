@@ -46,11 +46,19 @@ $(function(){
     $('.input').on('mouseout',function(){
         $(this).find('img').removeClass('showMoreChang');
         $(this).find('.inputShow').addClass('hidden')
-    })
+    });
     /*二维码*/
     $('.codeimg').hover(function(){
-        $('.erweima').css('display','block')
+        $('.erweima').css('display','block');
     },function(){
-        $('.erweima').css('display','none')
+        $('.erweima').css('display','none');
+    });
+    /*teacher导航*/
+    $('.category').hover(function(){
+        $('.th-img').addClass('showMoreChang');
+        $('.category-show').fadeIn('fast')
+    },function(){
+        $('.category-show').fadeOut('fast');
+        $('.th-img').removeClass('showMoreChang')
     })
 });
